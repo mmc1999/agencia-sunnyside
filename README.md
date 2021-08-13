@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/captura.jpg)
+![](/captura.png)
 
 ### Links
 
