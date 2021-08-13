@@ -1,0 +1,395 @@
+html {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'Fraunces', serif;
+    /*font-family: 'Barlow', sans-serif;*/
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    background-color:#fffbf8;
+}
+
+
+/*--------------------------------    HEADER      ----------------------------------*/
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: relative;
+}
+.nav {
+    position: absolute;
+    top: 55px;
+    right: 32px;
+    height: auto;
+    width: 85%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.menuHamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    
+}
+.menuHamburguer::before {
+    content: url("../images/triangulo.png");
+    filter: invert(1);
+    display:block;
+    width: 18px;
+    position:absolute;
+    right:-2px;
+    top: -20px;
+    fill: white;
+}
+.menuHamburguer li {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    margin: 10px 0px ;
+}
+.menuSobreNosotros {
+    text-decoration: none;
+    color: #949e9c;
+    font-size: 14px;
+}
+.contacto {
+    background-color: hsl(51, 100%, 49%);
+    height: 30px;
+    border-radius: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacto a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+}
+.iconoMenuBurguer {
+    cursor: pointer;
+}
+.active {
+    display: none;
+}
+.imagenes {
+    max-width: 100%;
+    height: auto;
+}
+.pc {
+    display: none;
+}
+/*------------------------------          MAIN      -------------------------------------------------*/
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    margin: 0%;
+    padding: 0%;
+}
+/*----------------------------     RPIMERA SECCION   ----------------------------*/
+.seccionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divNaranja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconoFlecha {
+    position: absolute;
+    top: 6%;
+    width: 20px;
+}
+.divTituloPrincipal {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+}
+.divTituloPrincipal h1{
+    color: white;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    font-weight: 300;
+}
+/*--------------------------SEGUNDA  SECCION ------------------------*/
+.textoGridImagenes {
+    padding: 20px;
+    text-align: center;
+}
+.textoGridImagenes h2 {
+    color:#253245;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+.textoGridImagenes p {
+    font-family: 'Barlow', sans-serif;
+    color: #909198;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.textoGridImagenes p span {
+    font-family: 'Fraunces', sans-serif;
+    color: #4e503c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: underline double hsl(51, 100%, 49%);
+}
+/*----------------------------------- TERCER SECCION -----------------------------------*/
+.divTercerSeccion {
+    position: relative;
+}
+.divTextoEnImagen {
+    position: absolute;
+    bottom: 12%;
+    text-align: center;
+}
+.divTextoEnImagen h4 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color:#24584e;
+    font-size: 18px;
+}
+.divTextoEnImagen p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: #276155;
+    font-size: 14px;
+    margin: 20px 10px;
+}
+/*-----------------------------------------CUARTA SECCION --------------------------*/
+.seccionCuarta div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    color:#666769;
+    margin: 40px 0px;
+}
+.cuartaSeccionH4 {
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #acacac;
+    letter-spacing: 5px;
+    margin: 40px 0px;
+}
+.divTestimonio img{
+    border-radius: 50%;
+    width: 70px;
+}
+.testimonio {
+    margin: 10px 20px;
+}
+.nombre {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+}
+.profesion {
+    margin: 5px 0px 0px 0px ;
+    padding: 0%;
+    color: #c0bebf;
+    font-size: 12px;
+}
+/*-------------------------- SECCION 4 FOTOS -------------------------*/
+.divFotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*-------------------------- FOOTER ------------------------*/
+.footer {
+    background-color: #90d4c5;
+    justify-content: center;
+    align-items: center;
+}
+.divFooterLogo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+}
+.logoPagina {
+    filter: contrast(10%);
+}
+.sobreNosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 30px 0px 60px 0px;
+}
+.enlaceSobreNosotros {
+    text-decoration: none;
+    font-size: 14px;
+    color:#468c7c;
+    font-family: 'Barlow', sans-serif;
+}
+.divIconosRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px 0px 60px 0px;
+    grid-gap: 40px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*--------------------------------------------ESCRITORIO ----------------------------------*/
+
+@media all and (min-width:750px) {
+    /*------------------------------------------------ BODY ----------------------------------------------*/
+    .pc {
+        display: block;
+        width: 100%;
+    }
+    .mobile {
+        display: none;
+    }
+    .iconoMenuBurguer {
+        display: none;
+    }
+    /*----------------------------------------------------HEADER -------------------------------------*/
+    .article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .divLogo {
+        align-self: flex-end;
+    }
+    .divNavegador {
+        align-self: flex-end;
+    }
+    .menuHamburguer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .menuHamburguer li {
+        margin: 0px 20px;
+    }
+    .menuHamburguer li a {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+    .contacto {
+        background-color: white;
+    }
+    .menuHamburguer .contacto a  {
+        color: black;
+    }
+    
+    .menuHamburguer::before {
+        display: none;
+    }
+    .nav {
+        background-color:transparent;
+        position: relative;
+        top: 0px; 
+        right: 0px;
+        display: flex;
+    }   
+    /*--------------------------------------------------- SEGUNDO HEADER -------------------------------------------*/
+    .segundaSeccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "texto amarillo" 
+        ". .";
+    }
+
+    .amarillo {
+        grid-area: amarillo;
+    }
+    .cambiarEltexto {
+        grid-area: texto;
+    }
+    .segundaSeccion div img{
+        max-width: 100%;
+    }
+    .textoGridImagenes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .textoGridImagenes h2 {
+        font-size: 35px;
+    }
+    .textoGridImagenes p{
+        padding: 0px 20px;
+    }
+    /*--------------------------------------------------- tercer HEADER -------------------------------------------*/
+    .tercerSeccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*--------------------------------------------------- cuarto HEADER -------------------------------------------*/
+    .seccionCuarta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 1fr;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        ".      .      .";
+    }
+    .divTitulo {
+        grid-area: titulo;
+    }
+    .seccionCuarta .divTestimonio {
+        align-self: flex-start;
+        margin: 0;
+        margin-bottom: 60px;
+        padding: 0%;
+    }
+    .testimonio {
+        margin-bottom: 50px;
+    }
+    /*--------------------------------------------------- quinta HEADER -------------------------------------------*/
+    .divFotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .pc4fotos {
+        max-width: 100%;
+        height: auto;
+    }
+}
