@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](captura.jpg)
+![](/captura.jpg)
 
 ### Links
 
@@ -41,4 +41,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Javascript](https://www.javascript.com/) - JS library
+- [Javascript](https://www.javascript.com/)
